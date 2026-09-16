@@ -1,0 +1,33 @@
+/*1 – Selecionar todas as tuplas da relação conta cujo saldo é maior que 900
+R: σ saldo > 900 (Conta) 
+
+2 – Selecionar todas as tuplas da relação conta cujo nome da agência é “Blumenau” possua saldo menor que 800.
+σ saldo < 800 ∧ Nome_Agencia = 'Blumenau' (Conta)
+
+3 – Selecionar todas as tuplas da relação agencia situadas nas cidades de “Blumenau” e “Joinville”.
+σ Cidade_Agencia = 'Blumenau' ∨ Cidade_Agencia = 'Joinville' (Agencia) 
+
+4 – Selecionar todas as tuplas da relação agência situada na cidade de “Joinville” e valor de fundos entre 800000 e
+1200000.
+σ Cidade_Agencia = 'Joinville' ∧ fundos ≥ 800000 ∧ fundos ≤ 1200000 (Agencia)
+
+5 – Listar o numero da conta de todas as tuplas da relação conta cujo saldo é maior que 900
+π Numero_Conta σ saldo > 900 (Conta)
+
+6 – Listar o número da conta e o saldo de todas as tuplas da relação conta cujo nome da agência é “Blumenau” e possua
+saldo menor que 800.
+π Numero_Conta , saldo σ Nome_Agencia = 'Blumenau' ∧ saldo < 800 
+
+7 – Listar o nome da agência e o nome da cidade de todas as tuplas da relação agência situadas nas cidades de “Blumenau” e
+“Joinville”.
+π Nome_Agencia, Cidade_Agencia σ Cidade_Agencia = 'Blumenau' ∨ Cidade_Agencia = 'Joinville' ( Agencia)
+
+8 – Listar o nome da agencia e o valor dos fundos de todas as tuplas da relação agencia situada na cidade de “Joinville” e
+valor de fundos entre 800000 e 1200000.*/
+π Nome_Agencia , fundos
+σ Cidade_Agencia = 'Joinville' ∧ fundos ≥ 800000 ∧ fundos ≤ 1200000 (Agencia)
+
+
+
+
+
